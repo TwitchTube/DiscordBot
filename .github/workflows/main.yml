@@ -30,7 +30,8 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: bacherik/twitchtube:${{ github.event_name == 'pull_request' && 'pr' || 'latest' }}
+        tags: |
+          bacherik/twitchtube:${{ github.event_name == 'pull_request' && 'pr-' || 'latest' }}${{ github.event.pull_request.number }}
 
     - name: Logout from DockerHub
       run: docker logout
