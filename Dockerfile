@@ -11,7 +11,7 @@ WORKDIR /home/gradle/src
 RUN gradle shadowJar --no-daemon
 
 # Verwende das offizielle OpenJDK-Image für die Laufzeitumgebung
-FROM openjdk:17-slim
+FROM openjdk:17.0.2-slim
 
 # Kopiere das gebaute ausführbare JAR aus dem Build-Container
 COPY --from=build /home/gradle/src/build/libs/*.jar /app/TwitchTube.jar
