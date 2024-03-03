@@ -1,5 +1,5 @@
 # Verwende das offizielle Gradle-Image, um den Build durchzuführen
-FROM gradle:8.4.0-jdk17 AS build
+FROM gradle:8.6.0-jdk17 AS build
 
 # Kopiere den Quellcode in das Container-Dateisystem
 COPY --chown=gradle:gradle . /home/gradle/src
