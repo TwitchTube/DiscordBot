@@ -1,7 +1,7 @@
 plugins {
     id 'java'
     id 'application'
-    id 'com.github.johnrengelman.shadow' version '7.1.2' // Fügt das Shadow Plugin hinzu
+    id 'com.github.johnrengelman.shadow' version '8.1.1' // Fügt das Shadow Plugin hinzu
 }
 
 group = 'de.bacherik'
