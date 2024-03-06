@@ -1,7 +1,7 @@
 plugins {
     id 'java'
     id 'application'
-    id 'com.github.johnrengelman.shadow' version '7.1.2' // Fügt das Shadow Plugin hinzu
+    id 'com.github.johnrengelman.shadow' version '8.1.1' // Fügt das Shadow Plugin hinzu
 }
 
 group = 'de.bacherik'
@@ -17,7 +17,7 @@ repositories {
 }
 
 dependencies {
-    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation platform('org.junit:junit-bom:5.10.2')
     testImplementation 'org.junit.jupiter:junit-jupiter'
 
     implementation("net.dv8tion:JDA:5.0.0-beta.20")
