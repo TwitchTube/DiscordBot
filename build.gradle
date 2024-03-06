@@ -26,7 +26,7 @@ dependencies {
 
     implementation 'org.apache.logging.log4j:log4j-slf4j-impl:2.23.0'
     implementation 'org.slf4j:slf4j-nop:2.0.12'
-    implementation("ch.qos.logback:logback-classic:1.2.8")
+    implementation("ch.qos.logback:logback-classic:1.5.3")
 
     // lombok
     compileOnly 'org.projectlombok:lombok:1.18.24'
